@@ -1,0 +1,171 @@
+{
+    "nodes": [
+        {
+            "name": "Myriel",
+            "group": 1,
+            "index": 0
+        },
+        {
+            "name": "Napoleon",
+            "group": 1,
+            "index": 1
+        },
+        {
+            "name": "Mlle.Baptistine",
+            "group": 1,
+            "index": 2
+        },
+        {
+            "name": "Mme.Magloire",
+            "group": 1,
+            "index": 3
+        },
+        {
+            "name": "CountessdeLo",
+            "group": 1,
+            "index": 4
+        },
+        {
+            "name": "Geborand",
+            "group": 1,
+            "index": 5
+        },
+        {
+            "name": "Champtercier",
+            "group": 1,
+            "index": 6
+        },
+        {
+            "name": "Cravatte",
+            "group": 1,
+            "index": 7
+        },
+        {
+            "name": "Count",
+            "group": 1,
+            "index": 8
+        },
+        {
+            "name": "OldMan",
+            "group": 1,
+            "index": 9
+        },
+        {
+            "name": "Labarre",
+            "group": 2,
+            "index": 10
+        },
+        {
+            "name": "Valjean",
+            "group": 2,
+            "index": 11
+        },
+        {
+            "name": "Marguerite",
+            "group": 3,
+            "index": 12
+        },
+        {
+            "name": "Mme.deR",
+            "group": 2,
+            "index": 13
+        },
+        {
+            "name": "Isabeau",
+            "group": 2,
+            "index": 14
+        },
+        {
+            "name": "Gervais",
+            "group": 2,
+            "index": 15
+        }
+    ],
+    "links": [
+        {
+            "source": 1,
+            "target": 0,
+            "value": 1
+        },
+        {
+            "source": 2,
+            "target": 0,
+            "value": 8
+        },
+        {
+            "source": 3,
+            "target": 0,
+            "value": 10
+        },
+        {
+            "source": 3,
+            "target": 2,
+            "value": 6
+        },
+        {
+            "source": 4,
+            "target": 0,
+            "value": 1
+        },
+        {
+            "source": 5,
+            "target": 0,
+            "value": 1
+        },
+        {
+            "source": 6,
+            "target": 0,
+            "value": 1
+        },
+        {
+            "source": 7,
+            "target": 0,
+            "value": 1
+        },
+        {
+            "source": 8,
+            "target": 0,
+            "value": 2
+        },
+        {
+            "source": 9,
+            "target": 0,
+            "value": 1
+        },
+        {
+            "source": 11,
+            "target": 10,
+            "value": 1
+        },
+        {
+            "source": 11,
+            "target": 3,
+            "value": 3
+        },
+        {
+            "source": 11,
+            "target": 2,
+            "value": 3
+        },
+        {
+            "source": 11,
+            "target": 0,
+            "value": 5
+        },
+        {
+            "source": 12,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 13,
+            "target": 11,
+            "value": 1
+        },
+        {
+            "source": 14,
+            "target": 11,
+            "value": 1
+        }
+    ]
+}

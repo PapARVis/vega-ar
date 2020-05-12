@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <style>
+        svg {
+            width: 500;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="output"></div>
+    <script>
+        // var svg = d3.select("body").append("svg");
+        var projection = d3.geoAlbersUsa().translate([450, 260]).scale(1200);
+        var path = d3.geoPath().projection(projection);
+
+        // var url = d3.json("http://vegaar.hkustvis.org/data/world-110m.json");
+        var url = d3.json("http://vegaar.hkustvis.org/data/us-10m.json");
+        // var data_url = d3.json("http://vegaar.hkustvis.org/data/earthquakes.json");
+        var data_url = d3.csv("http://vegaar.hkustvis.org/data/airports.csv");
+
+
+        Promise.all([url, data_url]).then(function (data) {
+            console.log(data[0])
+            var world = topojson.feature(data[0], data[0].objects.states).features;
+            console.log(world)
+            var places = data[1];
+            console.log(places)
+
+            // svg.selectAll("path")
+            //     .data(world)
+            //     .enter()
+            //     .append("path")
+            //     .attr("d", path)
+            //     .attr("fill", "lightgray")
+            //     .attr("stroke", "white");
+
+            // svg.selectAll("circle")
+            //     .data(places.features)
+            //     .enter()
+            //     .append("circle")
+            //     .attr("r", function (d) {
+            //         return 5;
+            //     })
+            //     .attr("cx", function (d) {
+            //         return projection(d.geometry.coordinates)[0]
+            //     })
+            //     .attr("cy", function (d) {
+            //         return projection(d.geometry.coordinates)[1]
+            //     })
+            //     .attr("fill", "darkgreen")
+            //     .attr("opacity", 0.5)
+
+            places.forEach(d => {
+                // let coord = projection(d.geometry.coordinates)
+                let coord = projection([parseFloat(d.longitude), parseFloat(d.latitude)])
+                try {
+                    d.x = coord[0]
+                    d.y = coord[1]
+                } catch (error) {
+                    return   
+                }
+            });
+
+            document.querySelector('#output').innerHTML = JSON.stringify(places)
+        });
+    </script>
+</body>
+
+</html>

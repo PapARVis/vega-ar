@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <canvas id="qr"></canvas>
+
+  <script type="module">
+    import { QRious } from '../build/vega-ar.js'
+    var qr = new QRious(
+      document.getElementById('qr'),
+      {
+        // value: 'https://github.com/chenzhutian'
+        size: 50,
+        value: 'http://tiny.cc/h0gi9y'
+      });
+  </script>
+</body>
+
+</html>

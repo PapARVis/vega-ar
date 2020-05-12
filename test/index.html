@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Vega Spec Test</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vega@5"></script> -->
+  <script src="./vega.js"></script>
+  <script src="../build/vega-ar.js"></script>
+  <style>
+    body {
+      margin: 10px;
+      font: 14px Helvetica Neue;
+      position: relative;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      width: 100%;
+      height: 20px;
+      background: white;
+    }
+
+    canvas,
+    svg {
+      border: 1px dashed #ccc;
+    }
+
+    .vega-bind {
+      line-height: 18px;
+      margin-bottom: 2px;
+    }
+
+    .vega-bind-name {
+      display: inline-block;
+      width: 100px;
+    }
+
+    .vega-bind input[type="range"] {
+      width: 400px;
+    }
+
+    .vega-bind label {
+      margin: 0 0.5em 0 2px;
+    }
+
+    .container {
+      position: relative;
+      /* display: flex;
+      flex-direction: column;
+      justify-content: flex-end; */
+      margin-top: 40px;
+      padding: 10px;
+    }
+
+    .spec-option {
+      color: deepskyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    Vega Specification:
+    <select id="specs">
+      <option value="">-----</option>
+    </select> &nbsp;
+    Vega-AR Specification:
+    <select id="specs-ar">
+      <option value="">-----</option>
+    </select> &nbsp;
+    Renderer:
+    <select id="render">
+      <option value="svg" selected>svg</option>
+      <option value="canvas">canvas</option>
+    </select> &nbsp;
+    Log Level:
+    <select id="level">
+      <option value="2" selected>warn</option>
+      <option value="3">info</option>
+      <option value="4">debug</option>
+    </select> <br />
+  </div>
+  <div id="ar">
+    <div class="container">
+      <div id="view"></div>
+    </div>
+    <div class="qrcodeContainer">
+      <img src="" alt="Image" id="finalImage" height="100px">
+      <a href="#">Full image</a>
+      <button type="button" id="publish">Publish</button>
+    </div>
+  </div>
+  <div id="external"></div>
+  <script type="module">
+    const { arParse, arView, publish, jsonParse } = vegaAR
+
+    let view
+
+    const select = document.querySelector('#specs');
+    select.addEventListener('change', function () {
+      load(select.options[select.selectedIndex].value);
+    })
+
+    const selectAR = document.querySelector('#specs-ar');
+    selectAR.addEventListener('change', function () {
+      load(selectAR.options[selectAR.selectedIndex].value);
+    })
+
+
+    const render = document.querySelector('#render');
+    render.addEventListener('change', function () {
+      options.renderer = render.options[render.selectedIndex].value;
+      if (view) view.renderer(options.renderer).runAsync();
+    })
+
+    const level = document.querySelector('#level');
+    level.addEventListener('change', function () {
+      options.logLevel = +level.options[level.selectedIndex].value;
+      if (view) view.logLevel(options.logLevel);
+    })
+
+    async function init() {
+      try {
+        let data = await fetch('spec/vega/index.json').then(r => r.json())
+
+        // load manifest of test specifications
+        data.forEach((name) => {
+          const opt = document.createElement('option');
+          opt.setAttribute('value', name);
+          opt.textContent = name
+          select.appendChild(opt)
+        })
+
+        data = await fetch('spec/vega-ar/index.json').then(r => r.json())
+        Object.keys(data)
+          .forEach(key => {
+            // add key as sperate line
+            const opt = document.createElement('option')
+            opt.setAttribute('value', key)
+            opt.textContent = `---${key}---`
+            opt.disabled = true
+            selectAR.appendChild(opt)
+
+            data[key].forEach(({ name }) => {
+              const opt = document.createElement('option')
+              opt.setAttribute('value', name)
+              opt.className = 'spec-option'
+              opt.textContent = name
+              selectAR.appendChild(opt)
+            })
+          })
+
+        // if query string is present, try to load spec
+        if (location.search) load(location.search.slice(1));
+      } catch (err) {
+        console.error(err, err.stack);
+      }
+    }
+
+    function findIndex(arr, name, acc) {
+      let idx = -1
+      for (let i = 0, n = arr.length; i < n; ++i) {
+        if (acc(arr[i]) === name) {
+          idx = i;
+          break;
+        }
+      }
+      return idx
+    }
+
+    async function load(name) {
+      if (!name) {
+        if (view) view.finalize().container().innerHTML = '';
+        return;
+      }
+
+      // update select widget state
+      let selectedIndex = findIndex(select.options, name, d => d.value)
+      let ar
+      let specType
+      let specPostfix
+      if (selectedIndex !== -1) {
+        ar = false
+        selectAR.selectedIndex = 0
+        specType = 'vega'
+        specPostfix = 'vg'
+        select.selectedIndex = selectedIndex
+      } else {
+        ar = true
+        select.selectedIndex = 0
+        specType = 'vega-ar'
+        specPostfix = 'va'
+        selectedIndex = findIndex(selectAR.options, name, d => d.value)
+        selectAR.selectedIndex = selectedIndex
+      }
+
+      // load vega spec, then visualize it
+      try {
+        const specStr = await fetch(`spec/${specType}/${name}.${specPostfix}.json`).then(r => r.text());
+        console.log('LOAD', name);
+
+        const spec = JSON.parse(specStr)
+        const { runtime, arRuntime } = arParse(spec, { ar })
+        if(view) view.finalize()
+
+        if (arRuntime) {
+          document.getElementById('publish').style.display = ''
+          document.getElementById('publish').onclick = () => publish('#finalImage', spec, view)
+        } else {
+          document.getElementById('publish').style.display = 'none'
+        }
+
+        console.log(runtime)
+        view = await arView(arRuntime, runtime, {
+          debug: true,
+          logLevel: vega.Warn,
+        })
+        view
+          .renderer('svg')
+          .initialize('#view')
+          .hover()
+
+        await view
+          .runAsync()
+
+        if(view.arHints) {
+          console.log(view.arHints)
+          const specSourceMap = jsonParse(specStr)
+          console.log(specSourceMap)
+          for(const h of view.arHints) {
+            switch(h.type) {
+              case 'dataset': {
+
+              }
+                break
+              case 'dataValue': {
+                console.log(h.dataName, specSourceMap.pointers[`/data/${h.idx}/name`])
+              }
+                break
+            }
+          }
+        }
+
+        console.log(view)
+        // view.syncScale()
+
+        console.log('INIT', name);
+      } catch (err) {
+        console.error(err, err.stack);
+      }
+    }
+
+    init();
+  </script>
+</body>
+
+</html>

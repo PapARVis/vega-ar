@@ -1,0 +1,46 @@
+{
+  "name": "vega-ar",
+  "version": "0.0.1",
+  "description": "Publish Vega visualizations as embedded web components.",
+  "keywords": [
+    "vega",
+    "data",
+    "visualization",
+    "component",
+    "ar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wtong2017/vega-ar"
+  },
+  "author": {
+    "name": "HKUST VISLAB",
+    "url": "https://github.com/wtong2017"
+  },
+  "contributors": [],
+  "license": "BSD-3-Clause",
+  "main": "vega-ar.js",
+  "types": "src/index.d.ts",
+  "peerDependencies": {
+    "vega": "*"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0"
+  },
+  "dependencies": {
+    "@types/d3-interpolate": "^1.3.1",
+    "d3-interpolate": "^1.3.2",
+    "vega": "^5.4.0"
+  },
+  "scripts": {
+    "build": "tsc -p . && rollup -c",
+    "serve": "http-server . -c-1 -p8080 -o -e js",
+    "start": "concurrently --kill-others -n Server,Typescript,Rollup 'npm run serve' 'tsc -w' 'rollup -c -w'",
+    "clean:dist": "rm -rf dist",
+    "copy:dist": "rsync -rv --exclude=tsconfig.tsbuildinfo build/* dist/ && rsync -rv test/spec/vega-ar/* dist/spec/ && cp -r images dist/ && cp package.json dist/",
+    "pullghpage": "git clone git@github.com:chenzhutian/vega-ar.git -b dist --single-branch dist",
+    "pushghpage": "cd dist && git add --all && git commit -m \"Release at $(date)\" && git push",
+    "release": "npm run clean:dist && npm run pullghpage && rm -rf dist/* && npm run copy:dist && npm run pushghpage"
+  }
+}

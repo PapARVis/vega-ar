@@ -1,0 +1,87 @@
+[
+  
+  "arc",
+  "autosize-fit",
+  "autosize-fit-x",
+  "autosize-fit-y",
+  "bar-hover-label",
+  "bar-rangestep",
+
+  "chart",
+  "chart-rangestep",
+  "choropleth",
+  "contour-map",
+  "contour-volcano",
+  "crossfilter",
+  "crossfilter-multi",
+  "density",
+  "dimpvis",
+  "dynamic-format",
+  "dynamic-url",
+
+  "falkensee",
+  "flush-axis-labels",
+  "font-size-steps",
+
+  "force-beeswarm",
+  "gapminder",
+  "gradient",
+
+  "heatmap",
+  "heatmap-lines",
+  "histogram",
+  "hops",
+
+  "images",
+
+  "kde",
+  "layout-facet",
+  "layout-hconcat",
+  "layout-vconcat",
+  "layout-splom",
+  "layout-wrap",
+  "legends",
+  "legends-continuous",
+  "legends-discrete",
+  "legends-ordinal",
+  "legends-symbol",
+  "lifelines",
+  "map",
+  "map-area-compare",
+  "map-bind",
+  "map-fit",
+
+  "movies-sort",
+
+  "nulls-histogram",
+  "nulls-scatter-plot",
+  "overview-detail",
+  "panzoom",
+  "parallel-coords",
+
+
+  "regression",
+  "scales-bin",
+  "scales-discretize",
+  "scatter-plot",
+
+  "scatter-brush-filter",
+  "scatter-brush-panzoom",
+  "shift-select",
+  "splom-inner",
+  "splom-outer",
+
+
+  "stocks-index",
+  "symbol-angle",
+  "titles",
+
+  "tree-nest",
+
+
+
+
+
+  "window"
+
+]

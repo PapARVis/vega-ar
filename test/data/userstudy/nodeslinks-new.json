@@ -1,0 +1,251 @@
+{
+    "nodes": [
+        {
+            "name": "YEUNG, Dit-Yan",
+            "area": "new AI",
+            "id": 24,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "ZHANG, Nevin Lianwen",
+            "area": "new AI",
+            "id": 37,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "YANG, Qiang",
+            "area": "new AI",
+            "id": 39,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "MAK, Brian Kan-Wing",
+            "area": "new AI",
+            "id": 44,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "KWOK, James Tin-Yau",
+            "area": "new AI",
+            "id": 61,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "LIN, Fangzhen",
+            "area": "new AI",
+            "id": 67,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "WU, Deknew AI",
+            "area": "new AI",
+            "id": 69,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "New Professor 1",
+            "id": 74,
+            "parent": 11,
+            "size": 1,
+            "area": "new area"
+        },
+        {
+            "name": "New Professor 2",
+            "id": 75,
+            "parent": 11,
+            "size": 1,
+            "area": "new area"
+        },
+        {
+            "name": "New Professor 3",
+            "id": 76,
+            "parent": 11,
+            "size": 1,
+            "area": "new area"
+        }
+    ],
+    "links": [
+        {
+            "source": 53,
+            "target": 61,
+            "weight": 1
+        },
+        {
+            "source": 28,
+            "target": 61,
+            "weight": 1
+        },
+        {
+            "source": 40,
+            "target": 61,
+            "weight": 1
+        },
+        {
+            "source": 25,
+            "target": 39,
+            "weight": 1
+        },
+        {
+            "source": 27,
+            "target": 39,
+            "weight": 1
+        },
+        {
+            "source": 26,
+            "target": 37,
+            "weight": 1
+        },
+        {
+            "source": 30,
+            "target": 37,
+            "weight": 3
+        },
+        {
+            "source": 44,
+            "target": 58,
+            "weight": 1
+        },
+        {
+            "source": 44,
+            "target": 61,
+            "weight": 8
+        },
+        {
+            "source": 44,
+            "target": 55,
+            "weight": 1
+        },
+        {
+            "source": 37,
+            "target": 39,
+            "weight": 1
+        },
+        {
+            "source": 39,
+            "target": 61,
+            "weight": 7
+        },
+        {
+            "source": 39,
+            "target": 42,
+            "weight": 1
+        },
+        {
+            "source": 39,
+            "target": 45,
+            "weight": 1
+        },
+        {
+            "source": 39,
+            "target": 47,
+            "weight": 1
+        },
+        {
+            "source": 39,
+            "target": 52,
+            "weight": 1
+        },
+        {
+            "source": 39,
+            "target": 54,
+            "weight": 4
+        },
+        {
+            "source": 24,
+            "target": 25,
+            "weight": 7
+        },
+        {
+            "source": 24,
+            "target": 61,
+            "weight": 18
+        },
+        {
+            "source": 24,
+            "target": 36,
+            "weight": 1
+        },
+        {
+            "source": 24,
+            "target": 37,
+            "weight": 3
+        },
+        {
+            "source": 24,
+            "target": 39,
+            "weight": 2
+        },
+        {
+            "source": 24,
+            "target": 40,
+            "weight": 3
+        },
+        {
+            "source": 24,
+            "target": 43,
+            "weight": 2
+        },
+        {
+            "source": 74,
+            "target": 45,
+            "weight": 4
+        },
+        {
+            "source": 74,
+            "target": 63,
+            "weight": 4
+        },
+        {
+            "source": 74,
+            "target": 67,
+            "weight": 4
+        },
+        {
+            "source": 74,
+            "target": 56,
+            "weight": 4
+        },
+        {
+            "source": 76,
+            "target": 66,
+            "weight": 4
+        },
+        {
+            "source": 75,
+            "target": 45,
+            "weight": 4
+        },
+        {
+            "source": 76,
+            "target": 46,
+            "weight": 4
+        },
+        {
+            "source": 75,
+            "target": 63,
+            "weight": 4
+        },
+        {
+            "source": 75,
+            "target": 35,
+            "weight": 4
+        },
+        {
+            "source": 74,
+            "target": 76,
+            "weight": 14
+        },
+        {
+            "source": 74,
+            "target": 75,
+            "weight": 24
+        }
+    ]
+}

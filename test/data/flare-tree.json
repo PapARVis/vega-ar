@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "name": "flare"
+  },
+  {
+    "id": 169,
+    "name": "vis",
+    "parent": 1
+  },
+  {
+    "id": 202,
+    "name": "events",
+    "parent": 169
+  },
+  {
+    "id": 203,
+    "name": "DataEvent",
+    "parent": 202,
+    "size": 2313
+  },
+  {
+    "id": 204,
+    "name": "SelectionEvent",
+    "parent": 202,
+    "size": 1880
+  },
+  {
+    "id": 205,
+    "name": "TooltipEvent",
+    "parent": 202,
+    "size": 1701
+  },
+  {
+    "id": 206,
+    "name": "VisualizationEvent",
+    "parent": 202,
+    "size": 1117
+  },
+  {
+    "id": 207,
+    "name": "legend",
+    "parent": 169
+  },
+  {
+    "id": 208,
+    "name": "Legend",
+    "parent": 207,
+    "size": 20859
+  },
+  {
+    "id": 209,
+    "name": "LegendItem",
+    "parent": 207,
+    "size": 4614
+  },
+  {
+    "id": 210,
+    "name": "LegendRange",
+    "parent": 207,
+    "size": 10530
+  },
+  {
+    "id": 211,
+    "name": "operator",
+    "parent": 169
+  },
+  {
+    "id": 212,
+    "name": "distortion",
+    "parent": 211
+  },
+  {
+    "id": 213,
+    "name": "BifocalDistortion",
+    "parent": 212,
+    "size": 4461
+  },
+  {
+    "id": 214,
+    "name": "Distortion",
+    "parent": 212,
+    "size": 6314
+  },
+  {
+    "id": 215,
+    "name": "FisheyeDistortion",
+    "parent": 212,
+    "size": 3444
+  },
+  {
+    "id": 222,
+    "name": "filter",
+    "parent": 211
+  },
+  {
+    "id": 223,
+    "name": "FisheyeTreeFilter",
+    "parent": 222,
+    "size": 5219
+  },
+  {
+    "id": 224,
+    "name": "GraphDistanceFilter",
+    "parent": 222,
+    "size": 3165
+  },
+  {
+    "id": 225,
+    "name": "VisibilityFilter",
+    "parent": 222,
+    "size": 3509
+  },
+  {
+    "id": 226,
+    "name": "IOperator",
+    "parent": 211,
+    "size": 1286
+  },
+  {
+    "id": 227,
+    "name": "label",
+    "parent": 211
+  },
+  {
+    "id": 228,
+    "name": "Labeler",
+    "parent": 227,
+    "size": 9956
+  },
+  {
+    "id": 229,
+    "name": "RadialLabeler",
+    "parent": 227,
+    "size": 3899
+  },
+  {
+    "id": 230,
+    "name": "StackedAreaLabeler",
+    "parent": 227,
+    "size": 3202
+  },
+  {
+    "id": 38,
+    "name": "data",
+    "parent": 1
+  },
+  {
+    "id": 45,
+    "name": "DataField",
+    "parent": 38,
+    "size": 1759
+  },
+  {
+    "id": 46,
+    "name": "DataSchema",
+    "parent": 38,
+    "size": 2165
+  },
+  {
+    "id": 47,
+    "name": "DataSet",
+    "parent": 38,
+    "size": 586
+  },
+  {
+    "id": 48,
+    "name": "DataSource",
+    "parent": 38,
+    "size": 3331
+  },
+  {
+    "id": 49,
+    "name": "DataTable",
+    "parent": 38,
+    "size": 772
+  },
+  {
+    "id": 50,
+    "name": "DataUtil",
+    "parent": 38,
+    "size": 3322
+  },
+  {
+    "id": 56,
+    "name": "flex",
+    "parent": 1
+  },
+  {
+    "id": 57,
+    "name": "FlareVis",
+    "parent": 56,
+    "size": 4116
+  }
+]

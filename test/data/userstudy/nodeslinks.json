@@ -1,0 +1,642 @@
+{
+    "nodes": [
+        {
+            "name": "LOCHOVSKY, Frederick H.",
+            "area": "DB",
+            "id": 25,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "LEE, Dik-Lun",
+            "area": "DB",
+            "id": 26,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "liuyh",
+            "area": "",
+            "id": 27,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "SHEN, Helen C.",
+            "area": "VG",
+            "id": 28,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "GOLIN, Mordecai J.",
+            "area": "TH",
+            "id": 29,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "MUPPALA, Jogesh K.",
+            "area": "NE",
+            "id": 30,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "CHEN, Lei",
+            "area": "DB",
+            "id": 31,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "DING, Cunsheng",
+            "area": "TH",
+            "id": 32,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "TANG, Chi-Keung",
+            "area": "VG",
+            "id": 33,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "area": "TH",
+            "name": "YI, Ke",
+            "id": 34,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "ARYA, Sunil",
+            "area": "TH",
+            "id": 35,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "area": "VG",
+            "name": "CHUNG, Albert Chi-Shing",
+            "id": 36,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "GU, Lin",
+            "area": "NE",
+            "id": 38,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "QUAN, Long",
+            "area": "VG",
+            "id": 40,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "LEUNG, Wai Ting",
+            "area": "DB",
+            "id": 41,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "LI, Bo",
+            "area": "NE",
+            "id": 42,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "wng",
+            "area": "",
+            "id": 43,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "LUO, Qiong",
+            "area": "DB",
+            "id": 45,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "WONG, Raymond Chi-Wing",
+            "area": "DB",
+            "id": 46,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "HORNER, Andrew B.",
+            "area": "ST",
+            "id": 47,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "PAPADIAS, Dimitris",
+            "area": "DB",
+            "id": 48,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "TAI, Chiew-Lan",
+            "area": "VG",
+            "id": 49,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "KIM, Sunghun",
+            "area": "ST",
+            "id": 50,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "HUI, Pan",
+            "area": "NE",
+            "id": 51,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "CHEUNG, Shing-Chi",
+            "area": "ST",
+            "id": 52,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "CHAN, Shueng-Han Gary",
+            "area": "NE",
+            "id": 53,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "NI, Lionel M.",
+            "area": "NE",
+            "id": 54,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "LAM, Gibson",
+            "area": "ST",
+            "id": 55,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "CHENG, Siu-Wing",
+            "area": "TH",
+            "id": 56,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "jinzh",
+            "area": "",
+            "id": 57,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "ROSSITER, David Paul",
+            "area": "ST",
+            "id": 58,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "HAMDI, Mounir",
+            "area": "NE",
+            "id": 59,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "SANDER, Pedro",
+            "area": "VG",
+            "id": 60,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "QU, Huamin",
+            "area": "VG",
+            "id": 62,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "LI, Xin",
+            "area": "NE",
+            "id": 63,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "stavrosp",
+            "area": "",
+            "id": 64,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "ZHANG, Qian",
+            "area": "NE",
+            "id": 65,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "CHAN, Tony F.",
+            "area": "dean",
+            "id": 66,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "PONG, Ting-Chuen",
+            "area": "VG",
+            "id": 68,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "BENSAOU, Brahim",
+            "area": "NE",
+            "id": 70,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "NG, Wilfred Siu-Hung",
+            "area": "DB",
+            "id": 71,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "ZHANG, Charles",
+            "area": "ST",
+            "id": 72,
+            "parent": 11,
+            "size": 1
+        },
+        {
+            "name": "CHEN, Kai",
+            "area": "ST",
+            "id": 73,
+            "parent": 11,
+            "size": 1
+        }
+    ],
+    "links": [
+        {
+            "source": 25,
+            "target": 26,
+            "weight": 5
+        },
+        {
+            "source": 26,
+            "target": 41,
+            "weight": 12
+        },
+        {
+            "source": 26,
+            "target": 42,
+            "weight": 4
+        },
+        {
+            "source": 26,
+            "target": 43,
+            "weight": 9
+        },
+        {
+            "source": 26,
+            "target": 45,
+            "weight": 4
+        },
+        {
+            "source": 26,
+            "target": 48,
+            "weight": 2
+        },
+        {
+            "source": 27,
+            "target": 31,
+            "weight": 16
+        },
+        {
+            "source": 27,
+            "target": 65,
+            "weight": 3
+        },
+        {
+            "source": 27,
+            "target": 34,
+            "weight": 2
+        },
+        {
+            "source": 27,
+            "target": 38,
+            "weight": 5
+        },
+        {
+            "source": 27,
+            "target": 45,
+            "weight": 4
+        },
+        {
+            "source": 27,
+            "target": 48,
+            "weight": 3
+        },
+        {
+            "source": 27,
+            "target": 52,
+            "weight": 1
+        },
+        {
+            "source": 27,
+            "target": 54,
+            "weight": 57
+        },
+        {
+            "source": 28,
+            "target": 40,
+            "weight": 2
+        },
+        {
+            "source": 28,
+            "target": 33,
+            "weight": 1
+        },
+        {
+            "source": 28,
+            "target": 36,
+            "weight": 5
+        },
+        {
+            "source": 29,
+            "target": 32,
+            "weight": 1
+        },
+        {
+            "source": 29,
+            "target": 56,
+            "weight": 4
+        },
+        {
+            "source": 29,
+            "target": 42,
+            "weight": 4
+        },
+        {
+            "source": 29,
+            "target": 35,
+            "weight": 1
+        },
+        {
+            "source": 30,
+            "target": 58,
+            "weight": 1
+        },
+        {
+            "source": 30,
+            "target": 59,
+            "weight": 16
+        },
+        {
+            "source": 30,
+            "target": 52,
+            "weight": 1
+        },
+        {
+            "source": 30,
+            "target": 55,
+            "weight": 1
+        },
+        {
+            "source": 31,
+            "target": 65,
+            "weight": 2
+        },
+        {
+            "source": 31,
+            "target": 34,
+            "weight": 4
+        },
+        {
+            "source": 31,
+            "target": 45,
+            "weight": 1
+        },
+        {
+            "source": 31,
+            "target": 46,
+            "weight": 1
+        },
+        {
+            "source": 31,
+            "target": 51,
+            "weight": 2
+        },
+        {
+            "source": 31,
+            "target": 54,
+            "weight": 8
+        },
+        {
+            "source": 33,
+            "target": 40,
+            "weight": 1
+        },
+        {
+            "source": 33,
+            "target": 36,
+            "weight": 1
+        },
+        {
+            "source": 33,
+            "target": 56,
+            "weight": 1
+        },
+        {
+            "source": 34,
+            "target": 56,
+            "weight": 2
+        },
+        {
+            "source": 34,
+            "target": 45,
+            "weight": 3
+        },
+        {
+            "source": 35,
+            "target": 56,
+            "weight": 3
+        },
+        {
+            "source": 36,
+            "target": 62,
+            "weight": 2
+        },
+        {
+            "source": 38,
+            "target": 52,
+            "weight": 2
+        },
+        {
+            "source": 38,
+            "target": 54,
+            "weight": 2
+        },
+        {
+            "source": 40,
+            "target": 49,
+            "weight": 3
+        },
+        {
+            "source": 41,
+            "target": 43,
+            "weight": 6
+        },
+        {
+            "source": 42,
+            "target": 57,
+            "weight": 5
+        },
+        {
+            "source": 42,
+            "target": 59,
+            "weight": 2
+        },
+        {
+            "source": 42,
+            "target": 65,
+            "weight": 30
+        },
+        {
+            "source": 42,
+            "target": 54,
+            "weight": 1
+        },
+        {
+            "source": 43,
+            "target": 46,
+            "weight": 1
+        },
+        {
+            "source": 45,
+            "target": 60,
+            "weight": 6
+        },
+        {
+            "source": 45,
+            "target": 62,
+            "weight": 2
+        },
+        {
+            "source": 45,
+            "target": 52,
+            "weight": 2
+        },
+        {
+            "source": 45,
+            "target": 54,
+            "weight": 11
+        },
+        {
+            "source": 47,
+            "target": 58,
+            "weight": 1
+        },
+        {
+            "source": 48,
+            "target": 64,
+            "weight": 15
+        },
+        {
+            "source": 48,
+            "target": 59,
+            "weight": 1
+        },
+        {
+            "source": 50,
+            "target": 52,
+            "weight": 3
+        },
+        {
+            "source": 52,
+            "target": 62,
+            "weight": 1
+        },
+        {
+            "source": 52,
+            "target": 54,
+            "weight": 5
+        },
+        {
+            "source": 53,
+            "target": 65,
+            "weight": 11
+        },
+        {
+            "source": 54,
+            "target": 57,
+            "weight": 1
+        },
+        {
+            "source": 54,
+            "target": 62,
+            "weight": 6
+        },
+        {
+            "source": 54,
+            "target": 65,
+            "weight": 16
+        },
+        {
+            "source": 54,
+            "target": 59,
+            "weight": 3
+        },
+        {
+            "source": 55,
+            "target": 58,
+            "weight": 13
+        },
+        {
+            "source": 57,
+            "target": 65,
+            "weight": 21
+        },
+        {
+            "source": 57,
+            "target": 59,
+            "weight": 2
+        },
+        {
+            "source": 59,
+            "target": 63,
+            "weight": 9
+        },
+        {
+            "source": 59,
+            "target": 65,
+            "weight": 10
+        }
+    ]
+}

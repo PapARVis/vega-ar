@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "name": "HKUST"
+    },
+    {
+        "id": 2,
+        "parent": 1,
+        "name": "SSCI"
+    },
+    {
+        "id": 3,
+        "parent": 1,
+        "name": "SHSS"
+    },
+    {
+        "id": 4,
+        "parent": 1,
+        "name": "SBM"
+    },
+    {
+        "id": 5,
+        "parent": 1,
+        "name": "SENG"
+    },
+    {
+        "id": 6,
+        "parent": 5,
+        "size": 50,
+        "name": "MAE"
+    },
+    {
+        "id": 7,
+        "parent": 5,
+        "size": 50,
+        "name": "ECE"
+    },
+    {
+        "id": 8,
+        "parent": 4,
+        "size": 50,
+        "name": "ECON"
+    },
+    {
+        "id": 9,
+        "parent": 2,
+        "size": 50,
+        "name": "PHYS"
+    },
+    {
+        "id": 10,
+        "parent": 5,
+        "size": 50,
+        "name": "CBME"
+    },
+    {
+        "id": 11,
+        "parent": 5,
+        "size": 50,
+        "name": "IELM"
+    },
+    {
+        "id": 12,
+        "parent": 5,
+        "size": 50,
+        "name": "CIVL"
+    },
+
+    {
+        "id": 13,
+        "parent": 5,
+        "size": 50,
+        "name": "CSE"
+    },
+    {
+        "id": 14,
+        "parent": 4,
+        "size": 50,
+        "name": "ISOM"
+    },
+    {
+        "id": 15,
+        "parent": 4,
+        "size": 50,
+        "name": "MARK"
+    },
+    {
+        "id": 16,
+        "parent": 4,
+        "size": 50,
+        "name": "ACCT"
+    },
+    {
+        "id": 17,
+        "parent": 3,
+        "size": 50,
+        "name": "HUMA"
+    },
+    {
+        "id": 18,
+        "parent": 3,
+        "size": 50,
+        "name": "SOSC"
+    },
+    {
+        "id": 19,
+        "parent": 4,
+        "size": 50,
+        "name": "MGMT"
+    },
+    {
+        "id": 20,
+        "parent": 4,
+        "size": 50,
+        "name": "FINA"
+    },
+    {
+        "id": 21,
+        "parent": 2,
+        "size": 50,
+        "name": "LIFS"
+    },
+    {
+        "id": 22,
+        "parent": 2,
+        "size": 50,
+        "name": "CHEM"
+    },
+    {
+        "id": 23,
+        "parent": 2,
+        "size": 50,
+        "name": "MATH"
+    }
+]
