@@ -1,4 +1,4 @@
-# vega-ar
+# vega-ar (the authors are busy working on CHI submission, will come back to clean the code later)
 
 Vega AR consists of 2 main parts: AR Parse and AR View (Validator and AR Preview).
 
